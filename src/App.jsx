@@ -6,7 +6,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Footer from './components/Footer'; // Import du Footer
-import './styles/reset.css';
+
 
 const App = () => {
   return (
