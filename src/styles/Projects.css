@@ -1,0 +1,122 @@
+/* Style pour la page des projets */
+.projects {
+  min-height: 100vh;
+  background-color: #000;
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.projects h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #ff1c8e;
+}
+
+/* Grille de projets */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Cartes des projets */
+.project-card {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+  color: #ff1c8e;
+}
+
+.project-card .project-description {
+  font-size: 1rem;
+  color: #d1d1d1;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover .project-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Style pour la modale */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal-content {
+  background-color: #333;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.modal-content h2 {
+  font-size: 2rem;
+  color: #ff1c8e;
+}
+
+.modal-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin: 1rem 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.back-btn {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff1c8e; /* Violet lumineux */
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid #ff1c8e;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background-color: #ff1c8e; /* Rose fluo */
+  transform: scale(1.05);
+}

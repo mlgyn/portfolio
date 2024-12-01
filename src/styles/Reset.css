@@ -1,0 +1,25 @@
+/* Réinitialisation des styles de base pour éviter les marges et paddings indésirables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #000000;  /* Fond noir pour tout le site */
+    color: white;               /* Texte blanc */
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Autres éléments */
+  a {
+    text-decoration: none;
+  }
+  

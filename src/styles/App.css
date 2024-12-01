@@ -1,0 +1,30 @@
+/* Global container */
+.section {
+  width: 100%; /* Prend toute la largeur de l'écran */
+  padding: 2rem 1rem;
+  box-sizing: border-box; /* Assure que le padding ne dépasse pas */
+}
+
+.section-container {
+  max-width: 1200px; /* Largeur maximale pour centrer le contenu */
+  margin: 0 auto; /* Centrage horizontal */
+}
+
+/* Ajout d'une hauteur minimum pour chaque section */
+.section-min-height {
+  min-height: 100vh; /* Prend la hauteur totale de l'écran */
+}
+
+/* Style commun pour les titres */
+.section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #111827;
+}
+
+.section p {
+  font-size: 1.2rem;
+  color: #4b5563;
+  text-align: center;
+}

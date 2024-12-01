@@ -1,0 +1,59 @@
+/* Navbar.css */
+
+/* Style général de la navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #000000, #1a1a1a);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Pour que la navbar reste en haut */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff1c8e; /* Bleu néon */
+  text-transform: uppercase;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links li {
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ff1c8e; /* Rose fluo au survol */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
